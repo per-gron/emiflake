@@ -1,0 +1,14 @@
+{
+  "name": "emiflake",
+  "description": "A utility library for creating a service that generates unique IDs at scale. Think of it as containing the common logic of Twitter's Snowflake and Boundary's Flake.",
+  "version": "1.0",
+  "url": "http://github.com/pereckerdal/emiflake",
+  "author": "Per Eckerdal <per@emilir.com>",
+  "keywords": ["id","generation","distributed","flake"],
+  "repository": { "type": "git", "url": "https://github.com/pereckerdal/emiflake.git" },
+  "engines": { "node" : ">=0.6.0" },
+  "scripts": {
+    "preinstall": "node-waf configure build"
+  },
+  "main": "./src/emiflake"
+}
