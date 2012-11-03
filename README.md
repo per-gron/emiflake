@@ -16,7 +16,7 @@ The structure of the ids are: The most significant bits contain the timestamp. A
 
 ## When is it appropriate to use `emiflake` ids?
 
-`emiflake` ids are appropriate when using node.js and when [Boundary Flake](https://github.com/boundary/flake) ids or [Twitter Snowflake](https://github.com/twitter/snowflake) would be appropriate. The exact details are well documented on their respective GitHub repos.
+`emiflake` ids are appropriate when using node.js and when [Boundary Flake](https://github.com/boundary/flake) ids or [Twitter Snowflake](https://github.com/twitter/snowflake) ids would be appropriate. The exact details are well documented on their respective GitHub repos.
 
 ## Recommended parameters
 
