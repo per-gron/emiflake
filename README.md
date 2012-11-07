@@ -1,8 +1,8 @@
 # emiflake
 
-`emiflake` is a node.js utility library for creating a service that generates unique IDs at scale. Think of it as containing the common logic of Twitter's Snowflake and Boundary's Flake, sans network and machine ID generation stuff.
+`emiflake` is a node.js utility library for creating a service that generates unique IDs at scale. Think of it as containing the common logic of [Twitter Snowflake](https://github.com/twitter/snowflake) and [Boundary Flake](https://github.com/boundary/flake), sans network and machine ID generation stuff.
 
-`emiflake` is useful if you want something like Snowflake, but don't want to use Zookeeper to coordinate the machine ID allocation. Another situation where the library is useful is when you want something like Boundary's Flake, but don't want to add a dependency to Erlang.
+`emiflake` is useful if you want something like Snowflake, but don't want to use Zookeeper to coordinate the machine ID allocation. Another situation where the library is useful is when you want something like [Boundary Flake](https://github.com/boundary/flake), but don't want to add a dependency to Erlang.
 
 It is written in C++ as a node.js extension, because I am very uncomfortable trying to handle 64 bit integers with Javascript's floating point math. `flake.h` and `flake.cc` contain the actual logic, and are usable by themselves, without node.js.
 
@@ -16,18 +16,18 @@ The structure of the ids are: The most significant bits contain the timestamp. A
 
 ## When is it appropriate to use `emiflake` ids?
 
-`emiflake` ids are appropriate when using node.js and when [Boundary Flake](https://github.com/boundary/flake) ids or [Twitter Snowflake](https://github.com/twitter/snowflake) ids would be appropriate. The exact details are well documented on their respective GitHub repos.
+`emiflake` ids are appropriate when using node.js and when [Boundary Flake](https://github.com/boundary/flake) ids or [Twitter Snowflake](https://github.com/twitter/snowflake) ids would be appropriate. The exact details are well documented on their respective READMEs.
 
 ## Recommended parameters
 
-To replicate the beavior of Boundary's Flake, use parameters like this:
+To replicate the beavior of [Boundary Flake](https://github.com/boundary/flake), use parameters like this:
 
 * `machineNumberLength`: 48, and use a MAC address as the machine number.
 * `sequenceNumberLength`: 16
 * `timestampLength`: 64
 * `timestampOffset`: 0
 
-To do something similar to Twitter's Snowflake, use parameters like this:
+To do something similar to [Twitter Snowflake](https://github.com/twitter/snowflake), use parameters like this:
 
 * `machineNumberLength`: 10, and use some coordination mechanism to choose the machine number.
 * `sequenceNumberLength`: 12
@@ -42,7 +42,7 @@ Install with `npm`:
 
 Generate an id:
 
-    var emiFlake = require('./emiflake');
+    var emiFlake = require('emiflake');
     
     var f = new emiFlake(new Buffer("mid"),
                          /*machineNumberLength:*/24,
