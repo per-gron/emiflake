@@ -74,7 +74,7 @@ Unspecified return value.
 
 ### EmiFlake.byteLength()
 
-Returns the size of ID buffers in bytes. This is equal to ceil(8*[the bit length]).
+Returns the size of ID buffers in bytes. This is equal to ceil([the bit length]/8).
 
 ### EmiFlake.bitLength()
 
