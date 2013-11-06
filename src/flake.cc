@@ -1,6 +1,7 @@
 #include "flake.h"
 
 #include <sys/time.h>
+#include <netinet/in.h>
 
 using namespace emilir;
 

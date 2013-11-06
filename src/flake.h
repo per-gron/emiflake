@@ -2,6 +2,8 @@
 #define emilir_flake_h
 
 #include <vector>
+#include <stdint.h>
+#include <cstdlib>
 
 namespace emilir {
 
