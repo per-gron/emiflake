@@ -4,6 +4,12 @@
   "version": "1.0.1",
   "url": "http://github.com/pereckerdal/emiflake",
   "author": "Per Eckerdal <per@emilir.com>",
+  "maintainers": [
+    {
+      "name": "Alex Gorbatchev",
+      "url": "https://github.com/alexgorbatchev"
+    }
+  ],
   "keywords": [
     "id",
     "generation",
