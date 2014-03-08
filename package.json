@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "url": "http://github.com/pereckerdal/emiflake",
   "author": "Per Eckerdal <per@emilir.com>",
+  "license": "MIT",
   "maintainers": [
     {
       "name": "Alex Gorbatchev",
