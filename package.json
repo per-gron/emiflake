@@ -4,11 +4,26 @@
   "version": "1.0.1",
   "url": "http://github.com/pereckerdal/emiflake",
   "author": "Per Eckerdal <per@emilir.com>",
-  "keywords": ["id","generation","distributed","flake"],
-  "repository": { "type": "git", "url": "https://github.com/pereckerdal/emiflake.git" },
-  "engines": { "node" : ">=0.8.0" },
-  "scripts": {
-    "preinstall": "node-gyp configure build"
+  "keywords": [
+    "id",
+    "generation",
+    "distributed",
+    "flake"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pereckerdal/emiflake.git"
   },
-  "main": "./src/emiflake"
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "preinstall": "node-gyp configure build",
+    "test": "mocha"
+  },
+  "main": "./src/emiflake",
+  "devDependencies": {
+    "chai": ">=1.9.0",
+    "mocha": ">=1.17.1"
+  }
 }
