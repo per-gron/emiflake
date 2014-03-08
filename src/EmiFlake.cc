@@ -144,7 +144,7 @@ Handle<Value> EmiFlake::New(const Arguments& args) {
                                   NULL :
                                   node::Buffer::Data(machineNumberBuffer)));
 
-    if (dataLen*8 < machineNumberLength->Value()) {
+    if ((int64_t)dataLen*8 < machineNumberLength->Value()) {
         THROW_TYPE_ERROR("Machine number buffer shorter than the specified machine number length");
     }
 
