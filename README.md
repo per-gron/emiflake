@@ -84,3 +84,7 @@ Returns the size of ID buffers in bytes. This is equal to ceil([the bit length]/
 ### EmiFlake.bitLength()
 
 Returns the size of the IDs in bits.
+
+## License
+
+MIT
