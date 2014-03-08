@@ -1,4 +1,7 @@
+#ifndef BUILDING_NODE_EXTENSION
 #define BUILDING_NODE_EXTENSION
+#endif
+
 #ifndef emilir_EmiFlake_h
 #define emilir_EmiFlake_h
 
