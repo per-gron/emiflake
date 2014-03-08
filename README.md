@@ -1,5 +1,10 @@
 # emiflake
 
+[![Dependency status](https://david-dm.org/pereckerdal/emiflake.png)](https://david-dm.org/pereckerdal/emiflake)
+[![devDependency Status](https://david-dm.org/pereckerdal/emiflake/dev-status.png)](https://david-dm.org/pereckerdal/emiflake#info=devDependencies)
+
+[![NPM](https://nodei.co/npm/emiflake.png?downloads=true)](https://npmjs.org/package/emiflake)
+
 `emiflake` is a node.js utility library for creating a service that generates unique IDs at scale. Think of it as containing the common logic of [Twitter Snowflake](https://github.com/twitter/snowflake) and [Boundary Flake](https://github.com/boundary/flake), sans network and machine ID generation stuff.
 
 `emiflake` is useful if you want something like Snowflake, but don't want to use Zookeeper to coordinate the machine ID allocation. Another situation where the library is useful is when you want something like [Boundary Flake](https://github.com/boundary/flake), but don't want to add a dependency to Erlang.
