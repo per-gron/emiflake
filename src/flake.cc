@@ -38,6 +38,7 @@ static uint64_t make_timestamp(uint64_t offset) {
           tv.tv_usec/1000);
 }
 
+#ifndef HTONLL
 static uint64_t htonll(uint64_t value) {
   // See http://stackoverflow.com/questions/3022552/is-there-any-standard-htonl-like-function-for-64-bits-integers-in-c
 
@@ -55,6 +56,7 @@ static uint64_t htonll(uint64_t value) {
     return value;
   }
 }
+#endif
 
 flake::flake(const uint8_t *machineNumber,
              size_t machineNumberLength,
